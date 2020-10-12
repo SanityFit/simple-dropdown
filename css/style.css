@@ -1,0 +1,84 @@
+/* -----------------------------Basic Layout----------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  background: #222;
+}
+
+.container {
+  width: 100%;
+  max-width: 1920px;
+  padding-left: 75px;
+  padding-right: 75px;
+  margin: 0 auto;
+  background: #199;
+  outline: 5px solid #509;
+}
+
+.section {
+  outline: 1px solid #500;
+  background: #eff;
+}
+
+.section__heading {
+  outline: 1px solid #c50;
+  width: 90%;
+  margin: 0 auto;
+
+}
+
+.section__description {
+  width: 80%;
+  background: #ffb;
+  outline: 1px solid #005;
+  margin: 0 auto;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+  /* width: 100%; ----don't set width for .row!!!!! */
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; ----- don't use this, you will override the height, which .row now stores from left .col*/
+  background: #905;
+  outline: 1px solid #509;
+}
+
+.col {
+  /* height: 90%; ----it's useless to set height in percentages because the page doesn't have a preset height*/
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid #005;
+  background: #f75;
+  flex: 0 0 50%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.col__img {
+  width: 30%;
+  height: auto;
+  outline: 4px solid #500;
+}
+
+.lorem {
+  padding-bottom: 50px;
+}
+
+.col__row {
+  background: #eef;
+  height: 30%;
+  /* flex: 0 0 40%; --- if this work, this: height: 40%;  --- will work too*/
+  outline: 1px solid #509;
+  width: 80%;
+}
